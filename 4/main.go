@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 const a = "Hello World"
 
 type ID int // Create Types
@@ -13,5 +15,7 @@ var (
 )
  
 func main() {
-	println(f) 
+	fmt.Printf("Type of e variable: %T\n", e)
+	fmt.Printf("Value of e variable: %v\n", e)
+	fmt.Printf("Type of f variable: %T\n", f)
 }
