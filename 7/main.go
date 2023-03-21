@@ -10,7 +10,7 @@ func main() {
 
 	delete(salaries, "JM")
 
-	salarys["Joao"] = 5000
+	salaries["Joao"] = 5000
 
 	for name, salary := range salaries {
 		fmt.Printf("Name: %s, salary: %d\n", name, salary)
