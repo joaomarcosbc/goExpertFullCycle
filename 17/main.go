@@ -7,9 +7,11 @@ type Account struct {
 }
 
 // kind of constructor function
+// question: whats the difference between initialize with pointers and not, today!!!
 func NewAccount() *Account {
 	return &Account{balance: 0}
 }
+
 
 ////////////////////////////////////////////////
 func (a Account) simulate(value float64) {
@@ -25,7 +27,10 @@ func (a *Account) add(value float64) float64{
 func main() {
 	account := NewAccount()
 
+	account.add(12)
 	account.simulate(300)
-	account.add(300)
+
 	fmt.Println(account.balance)
+
+
 }
