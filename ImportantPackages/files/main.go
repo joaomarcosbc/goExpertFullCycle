@@ -47,4 +47,10 @@ func main() {
 
 		fmt.Println(string(buffer[:n]))
 	}
+
+
+	err = os.Remove("myfile.md")
+	if err != nil {
+		panic(err)
+	}
 }
